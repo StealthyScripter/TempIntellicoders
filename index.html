@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styling/style.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- Main Parent Flex Box -->
+        <div class="main_header_tab_flexP">
+
+            <div class="main_header_tab_flexC1">
+                <img alt="logo_top_left" loading="lazy" src="./assest/top_left_logo_.png" class="img" />
+            </div>
+
+            <!-- Child 2 - ExForm.io title  -->
+            <div class="main_header_tab_flexC2">
+                <div class="div-5">EzForm.io</div>
+            </div>
+
+
+            <!-- Child 3 - export button  -->
+            <div class="main_header_tab_flexC3">
+                <div>
+                    <button id="export-button" class="exports-box-text">Export to Excel</button>
+                </div>
+                <div class="settings_logo">
+                    <img alt="logo" loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c315f4b32699a06b94dc8336ef6a5e714131e62344ccb9887717ef8ee603e85e?"
+                        class="img-2" />
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="div-8">
+            
+            <span style="color: rgba(195, 195, 195, 1)">
+                <p>Drag and Drop or Click Here to Select Files</p>
+                <form id="file-form" action="" method="post">
+                    <input type="file" id="myFile" name="filename">
+                    <button id = "submit_form_button">Submit</button>
+                  </form>
+            </span>
+
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
