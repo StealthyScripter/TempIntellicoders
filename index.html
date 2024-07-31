@@ -20,11 +20,7 @@
                     <img alt="logo_top_left" loading="lazy" src="./assest/top_left_logo_.png" class="img" />
                 </div>
 
-                <label class="switch">
-                    <input id="dark_mode_toggle" type="checkbox">
-                    <span class="slider round"></span>
-                    <p id = "small-text">Dark Mode</p>
-                </label>
+               
 
             </div>
 
@@ -47,6 +43,16 @@
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/c315f4b32699a06b94dc8336ef6a5e714131e62344ccb9887717ef8ee603e85e?"
                         class="img-2" />
                 </div>
+
+                <!--  Change of Theme in WebPage -->
+                  <div class="toggle-bar">
+                    <label class="switch">
+                        <input id="dark_mode_toggle" type="checkbox">
+                        <span class="slider round"></span>
+                        <!-- <p id = "small-text">Dark Mode</p> -->
+                    </label>
+                  </div>
+                 
             </div>
 
         </div>
@@ -54,13 +60,22 @@
 
 
 
-        <div class="div-8">
+        <div class="div-8" id="drop-area">
 
             <span style="color: rgba(195, 195, 195, 1)">
                 <p>Drag and Drop or Click Here to Select Files</p>
                 <form id="file-form" action="./index.html" method="post">
-                    <input type="file" id="myFile" name="filename">
-                    <button id="submit_form_button" style="display: none;">Submit</button>
+                    
+                    <input type="file" id="myFile" name="filename" required>
+                    <label for="myFile">Choose a File </label>
+                    <div class="file-name">
+                        <span id="file-name">No File Chosen</span>
+                    </div>
+                    
+                    <div class="upload-button">
+                        <input type="submit" value="UPLOAD" id="upload_form">
+                    </div>
+                   
                 </form>
             </span>
 
