@@ -1,0 +1,10 @@
+.env
+.DS_Store 
+
+
+*config.py
+
+__pycache__/
+*.pyc
+
+intellicoders/Backend/app/config.py
