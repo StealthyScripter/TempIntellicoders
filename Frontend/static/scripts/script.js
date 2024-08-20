@@ -91,3 +91,22 @@ document.querySelector('form').onsubmit = async function(event) {
     const result = await response.json();  
     document.getElementById('file-name').innerText = JSON.stringify(result, null, 2);  
 };
+
+// this is for the file upload button
+const submitButton = document.getElementById('model');
+submitButton.addEventListener('click', async () => {
+    const selectedModel = document.getElementById('model').value;
+
+    const response = await fetch('/select_model', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ model: selectedModel }),
+    });
+
+    const result = await response.json();
+    console.log(result);
+});
+
+

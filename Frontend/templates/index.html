@@ -48,6 +48,17 @@
 
         </div>
 
+    <!-- <h1>Select a Model</h1> -->
+<form action="{{ url_for('select_model') }}" method="POST">
+    <label for="model">Choose a model:</label>
+    <select id="model" name="model">
+        {% for model in prebuilt_models %}
+        <option value="{{ model }}" {% if model == currentModel %}selected{% endif %}>{{ model }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Select Model</button>
+</form>
+
         <div class="div-8" id="drop-area">
             <span style="color: rgba(195, 195, 195, 1)">
                 <p>Drag and Drop or Click Here to Select Files</p>
