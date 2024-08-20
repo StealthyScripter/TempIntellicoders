@@ -36,3 +36,12 @@ Backend/*.pyc
 Backend/*.pyo
 Backend/*.pyd
 Backend/app/__pycache__/
+
+
+venv/
+*.pyc
+__pycache__/
+*.pyo
+
+#ignore config files
+config.py
